@@ -1,0 +1,28 @@
+package no3;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Praktikum
+ */
+public class Faktorial {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+
+        Scanner scn = new Scanner(System.in);
+        System.out.print("angka faktorial = ");
+        int n = scn.nextInt();
+        int x = 1;
+        for (int i = n; i > 0; i--) {
+            x *= i;
+            System.out.print(i + " x ");
+        }
+        System.out.println(", hasil = "+n + "! = " + x);
+    }
+
+}
